@@ -1,0 +1,260 @@
+body {
+    background: black;
+    color: white;
+}
+
+.container {
+    max-width: 1270px;
+    margin: 0 auto;
+    }
+
+.title {
+    color: white;
+    width: 100%;
+    margin-left: 0px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 62px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.header__login_button {
+    margin: auto;
+    padding: 8px 24px;
+    background-color: transparent;
+    color: white;
+    border-radius: 50px;
+    border: 3px solid #E74011;
+}
+
+.header__tab {
+   margin: auto;
+}
+
+
+.header__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    
+}
+
+.hero_header__wrapper
+{
+    background-image: url(./images/hero_header__logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+.hero_header__wrapper
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.hero_header__title {
+margin-top: 201px;
+color: white;
+width: 624px;
+height: 320px;
+margin-left: 0px;
+font-weight: 700;
+font-size: 60px;
+line-height: 64px;
+}
+
+.hero_header__tabs
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.hero_header__rectangle
+{
+    max-width: 300px;
+}
+
+.hero_header__tab
+{
+    padding: 20.47px 35px 31px 32px;
+    background: rgba(113, 110, 110, 0.20);
+    backdrop-filter: blur(25px);
+}
+
+.hero_header__all_sports
+{
+    padding-top: 20px;
+    color: #E74011;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+
+
+}
+.wrapper
+{
+margin:0 auto;
+
+}
+
+.features__feature_table
+{
+    display: grid;
+    grid-gap: 63px 53px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.features__feature
+{
+    max-width: 396px;
+}
+
+.kinds_of_sports__table
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 115px 162px;
+}
+
+.kinds_of_sports__k_image
+{
+    width: 36px;
+    height: 36px;
+    background-color: #E74011;
+    border-radius: 50px;
+    border: 16px solid #E74011;
+}
+
+
+.kinds_of_sports__feature
+{
+    display: flex;
+    gap: 44px;
+}
+
+.kinds_of_sports__call_to_action
+{
+    background: #242424;
+}
+
+
+.kinds_of_sports__title
+{
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: 32px;
+margin-bottom: 16px;
+margin-top: 0px;
+}
+
+.kinds_of_sports__text
+{
+    max-width:174px ;
+}
+
+.hero_header__slider
+{
+    line-height: 28px;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.how_to_start__step_number{
+margin-top: 64px;
+margin-bottom: 16px;
+font-size: 170px;
+font-style: normal;
+font-weight: 600;
+line-height: 200px;
+background: linear-gradient(180deg, #E74011 16.6%, #FFF 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.how_to_start__steps
+{
+    display: grid;
+    grid-gap: 48px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.best_cases__card
+{
+    display: flex;
+    flex-direction: row;
+    gap: 134px
+}
+
+.best_cases__before
+{
+    max-width: 310px;
+}
+
+
+.best_cases__before
+{
+    max-width: 350px;
+}
+
+.order_form__text
+{
+padding-bottom: 42px;
+border-bottom-width: thick;
+border-bottom: solid;
+border-bottom-width: thin;
+}
+
+
+.order_form__form_to_fill
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 104px 48px;
+}
+
+.order_form__button
+{
+    width: 401px;
+    border-radius: 50px;
+    border: 3px solid #E74011;
+    background: #E74011;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    padding: 16px;
+
+}
+
+.order_form__accept
+{
+    margin-top: 85px;
+    margin-bottom: 133px;
+    margin-left: 77px;
+}
+
+.order_form__rectangle
+{
+    position: relative;
+    top: 110px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid #FFF;
+    opacity: 0.4;
+}
+
