@@ -7,10 +7,12 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="./style.css">
   <title>Что-то делается тут</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
  <header class="header container">
     <img class="header__logo" src="./images/header__logo.svg" alt="hero_header__image"/>
     <div class="header__menu">
@@ -21,20 +23,18 @@
       <div class="header__tab">Новости</div>
       <div class="header__tab">Бесплатный демо</div>
       <p class="header__login_button">Войти <img class="header__button_arrow" src="./images/button_arrow.png" alt="button_arrow"/> </p>
-    </div>
-
-    
+    </div>  
 </header>
 
 <main>
-    
-<div class="hero_header container">
+    <div class="hero_header container">
     <div class="hero_header__wrapper">
         <h1 class="hero_header__title"> 
             Цифровая платформа для организации спортивных турниров и лиг
         </h1>
 
     </div>
+
     <div class="hero_header__tabs">
     <div class="hero_header__rectangle">
         <p class="hero_header__slider">
@@ -69,10 +69,12 @@
             Уличный-хоккей
         </p>
     </div>
-
-    <div class="hero_header__all_sports">Все виды <p class="hero_header__all_sports_text">6</p></button>
+   
+    <div class="hero_header__all_sports">Все виды 
+        <p class="hero_header__all_sports_text">6</p>
     </div>
-
+    </div>
+    </div>
     <span class="hero_header__scroll_down"></span>
     
 </div>
@@ -251,7 +253,8 @@
     </div>
 
 <div class="kinds_of_sports__call_to_action"> 
-    <p class="kinds_of_sports__call_to_action_text">Не нашли ваш вид спорта? <a href="url">Напишите нам</a> </p>
+    <p class="kinds_of_sports__call_to_action_text">Не нашли ваш вид спорта? <a class="kinds_of_sports__call_to_action_link">Напишите нам!</a> </p>
+    <img class="kinds_of_sports__call_to_action_ball" src="./images/call_to_action_ball.png"/>
 </div>
 
 
@@ -285,28 +288,28 @@
     </div>
 </div>
 
-<div class="news">
+<div class="news container">
         <h3 class="title">Новости</h3>
         <div class="news__slider">
 </div>
     
-<div class="best_cases">
-            <h3 class="title">Успешные кейсы?</h3>
-            <div class="best_cases__tabs"></div>
-
-            <div class="best_cases__case"></div>
-            <p class="best_cases__description"> Всего 3 простых шага, чтобы начать пользоваться современной и удобной платформой  и сделать ваши спортивные мероприятия максимально привлекательными для всех участников.</p>
-            
-        
-                <div class="best_cases__card">
+<div class="best_cases container">
+     <h3 class="title">Успешные кейсы</h3>
+         <div class="best_cases__tabs">Трудовые резервы</div>
+         <div class="best_cases__case">
+            <p class="best_cases__title">Трудовые резервы</p>
+            <p class="best_cases__description"> Описание партнера, для которого проработан кейс, что было сделано в рамках задач, как реализовано, как партнер пользуется и оценивает пользу. </p>
+              <div class="best_cases__card">
                     <div class="best_cases__before">
-                    <p class="best_cases__text"> Ведение счета игры в блокноте с последующим переносом в Excel </p>
+                    <p class="best_cases__text"> Ведение счета игры в блокноте с последующим переносом в Excel 
+                    </p>
                     </div>
                     <div class="best_cases__after">
-                        <p class="best_cases__text"> Удобное ведение счета с последующим легким выводом статистики </p>
+                        <p class="best_cases__text"> Удобное ведение счета с последующим легким выводом статистики
+                         </p>
                     </div>
                 </div>
- </div>
+ </div>  </div>
 
     
 <div class="order_form container">
