@@ -1,20 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 
 body {
     background: rgba(17,17,17,1);
     color: white;
-
+    font-family: 'Montserrat', sans-serif;
 
 }
 
 .container {
     max-width: 1270px;
     margin: 0 auto;
-    }
+}
 
 .title {
     color: white;
     width: 100%;
-    margin-left: 0px;
     font-weight: 700;
     font-size: 56px;
     line-height: 62px;
@@ -23,7 +24,6 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-   
 }
 
 .header__login_button {
@@ -35,6 +35,20 @@ body {
     border: 3px solid #E74011;
 }
 
+.call_to_action_button{
+    padding: 16px 48px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-radius: 10000px;
+    border: 3px solid #E74011;
+    background: #E74011;
+    color: var(--solid-white, #FFF);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
 .header__tab {
    margin: auto;
 }
@@ -43,15 +57,15 @@ body {
 .header__menu {
     display: flex;
     flex-direction: row;
-    gap: 24px;
-    
+    gap: 24px; 
 }
 
-.hero_header__wrapper {
-    background-image: url(./images/hero_header__logo.png);
-    background-size: contain;
+.hero_header {
+    background-image: url(./images/hero_header__logo.png), url(./images/hero_header_decor_1.png), url(./images/Rectangle\ 7.png), url(./images/Rectangle10.png);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position-y: 34%, 67%, 82%, 75%;
+    background-position-x: 101%, 47%, 67%, 91%;
+    background-size: 798px, 585px, 311px, 316px;
 }
 
 
@@ -62,14 +76,12 @@ body {
 
 
 .hero_header__title {
-margin-top: 201px;
-color: white;
-width: 624px;
-height: 320px;
-margin-left: 0px;
-font-weight: 700;
-font-size: 60px;
-line-height: 64px;
+    margin: 220px auto 240px 0; 
+    color: white;
+    width: 56%;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 64px;
 }
 
 .hero_header__tabs {
@@ -78,24 +90,30 @@ line-height: 64px;
 }
 
 .hero_header__rectangle {
-    max-width: 300px;
+    width: 21%;
 }
 
 .hero_header__tab {
+    width: 17%;
     padding: 20.47px 35px 31px 32px;
     background: rgba(113, 110, 110, 0.20);
     backdrop-filter: blur(25px);
 }
 
 .hero_header__all_sports {
+    position: relative;
     padding-top: 20px;
     color: #E74011;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
+}
 
-
+.hero_header__all_sports_text {
+    top: -20px;
+    right: -18px;
+    position: absolute;
 }
 
 .wrapper {
@@ -106,6 +124,7 @@ margin:0 auto;
     display: grid;
     grid-gap: 63px 53px;
     grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 124px;
 }
 
 
@@ -114,11 +133,11 @@ margin:0 auto;
 }
 
 .features__title {
-color: var(--solid-white, #FFF);
-font-size: 28px;
-font-style: normal;
-font-weight: 700;
-line-height: 32px; 
+    color: var(--solid-white, #FFF);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; 
 }
 
 .kinds_of_sports__table {
@@ -162,10 +181,10 @@ line-height: 32px;
 
 
 .kinds_of_sports__call_to_action_text {
-margin: 0;
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
+    margin: 0;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
 }
 
 .kinds_of_sports__call_to_action_link {
@@ -179,12 +198,12 @@ font-weight: 700;
 }
 
 .kinds_of_sports__title {
-font-size: 28px;
-font-style: normal;
-font-weight: 700;
-line-height: 32px;
-margin-bottom: 16px;
-margin-top: 0px;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 16px;
+    margin-top: 0px;
 }
 
 .kinds_of_sports__text {
@@ -195,20 +214,19 @@ margin-top: 0px;
     line-height: 28px;
     font-size: 24px;
     font-weight: bold;
-
 }
 
 .how_to_start__step_number {
-margin-top: 64px;
-margin-bottom: 16px;
-font-size: 170px;
-font-style: normal;
-font-weight: 600;
-line-height: 200px;
-background: linear-gradient(180deg, #E74011 16.6%, #FFF 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    margin-top: 64px;
+    margin-bottom: 16px;
+    font-size: 170px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 200px;
+    background: linear-gradient(180deg, #E74011 16.6%, #FFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
 }
 
 .how_to_start__steps {
@@ -224,8 +242,26 @@ background-clip: text;
     line-height: 54px; 
 }
 
+.best_cases__tabs{
+    display: flex;
+    gap: 32px;
+}
+
+.best_cases__tab{
+    color: var(--solid-white, #FFF);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
 .best_cases__description {
     margin: 18px 0px 42px 0px;
+}
+
+.best_cases__case {
+    width: 60%;
 }
 
 
@@ -244,15 +280,20 @@ background-clip: text;
     max-width: 350px;
 }
 
-.order_form {
-    
+
+.order_form__accept_link{
+    color: #E74011;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
 }
 
 .order_form__text {
-padding-bottom: 42px;
-border-bottom-width: thick;
-border-bottom: solid;
-border-bottom-width: thin;
+    padding-bottom: 42px;
+    border-bottom-width: thick;
+    border-bottom: solid;
+    border-bottom-width: thin;
 }
 
 
@@ -280,6 +321,11 @@ border-bottom-width: thin;
     margin-top: 85px;
     margin-bottom: 133px;
     margin-left: 77px;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
 }
 
 .order_form__rectangle {
@@ -290,4 +336,10 @@ border-bottom-width: thin;
     border-radius: 8px;
     border: 2px solid #FFF;
     opacity: 0.4;
+}
+
+.footer{
+    margin-top: 226px;
+    display: flex;
+    justify-content: space-between;
 }
